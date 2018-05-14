@@ -19,10 +19,8 @@
 
 * Installing CM
 
-<div style="page-break-after: always;"></div>
+## <center> Installation Pre-requisite </center>
 
-## <center> Installation pre-requisite. </center>
-<div style="page-break-after: always;"></div>
 * swappiness -> sysctl -a |grep swappiness -> 1
 * Nothing to be done for EXT, as my dev mount point is of type xfs
 * mount volume -> [ec2-user@ip-172-31-5-153 ~]$ df -h
@@ -43,7 +41,6 @@
 	*systemctl status ntpd
 * setting up /etc/hosts -> cat /etc/nsswitch.conf | grep hosts - Nothing modified as nsswitch takes care of this. cat /etc/hosts
 
-## <center> Installation pre-requisite. </center>
 
 ## <center> Installation Maria-DB </center>
 * sudo yum install mariadb-server
@@ -55,8 +52,6 @@
 * get the mysql-connector -> wget "https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.46.tar.gz"
 * copy this connector to /user/share/java ( create this folder if it doesn not exists) -> cp mysql-connector-java-5.1.46 /user/share/java/mysql-connector-java
 
-## <center> Installation Maria-DB </center>
-
 ## <center> Installation Java </center>
 * wget "http://archive.cloudera.com/director/redhat/7/x86_64/director/cloudera-director.repo"
 * yum list all | grep oracle-* -> yum install oracle-j2sdk1.8.x86_64
@@ -66,8 +61,6 @@
 	* export JRE_HOME=/usr/java/jdk1.8.0_121-cloudera/jre
 	* export PATH=/usr/java/jdk1.8.0_121-cloudera/bin/:/usr/java/jdk1.8.0_121-cloudera/jre/bin/
 
-## <center> Installation Java </center>
-
 ## <center> Installation CM </center>
 * wget https://archive.cloudera.com/cm5/redhat/7/x86_64/cm/cloudera-manager.repo
 * yum list all | grep cloudera-manager
@@ -75,4 +68,3 @@
 * Test the DB connection & also check if the required tables are created - > sudo /usr/share/cmf/schema/scm_prepare_database.sh mysql -h ip-172-31-5-153 scm scm
 * If the above test succeeds then run systemctl start cloudera-scm-server
 
-## <center> Installation CM </center>
