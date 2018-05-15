@@ -22,10 +22,10 @@
 ----sys 0m0.432s
 
 * HDFS output Terasort ->
--rw-r--r--   1 nithinraot supergroup          0 2018-05-15 03:36 /user/nithinraot/terasort/_SUCCESS
--rw-r--r--  10 nithinraot supergroup         77 2018-05-15 03:35 /user/nithinraot/terasort/_partition.lst
--rw-r--r--   1 nithinraot supergroup  125682500 2018-05-15 03:36 /user/nithinraot/terasort/part-r-00000
--rw-r--r--   1 nithinraot supergroup  124567300 2018-05-15 03:36 /user/nithinraot/terasort/part-r-00001
+*-rw-r--r--   1 nithinraot supergroup          0 2018-05-15 03:36 /user/nithinraot/terasort/_SUCCESS
+*-rw-r--r--  10 nithinraot supergroup         77 2018-05-15 03:35 /user/nithinraot/terasort/_partition.lst
+*-rw-r--r--   1 nithinraot supergroup  125682500 2018-05-15 03:36 /user/nithinraot/terasort/part-r-00000
+*-rw-r--r--   1 nithinraot supergroup  124567300 2018-05-15 03:36 /user/nithinraot/terasort/part-r-00001
 -rw-r--r--   1 nithinraot supergroup  125740300 2018-05-15 03:36 /user/nithinraot/terasort/part-r-00002
 -rw-r--r--   1 nithinraot supergroup  125777100 2018-05-15 03:36 /user/nithinraot/terasort/part-r-00003
 -rw-r--r--   1 nithinraot supergroup  123369100 2018-05-15 03:36 /user/nithinraot/terasort/part-r-00004
