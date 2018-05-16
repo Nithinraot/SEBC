@@ -8,6 +8,8 @@
 	* mysql> GRANT REPLICATION SLAVE ON *.* TO 'slaveuser'@'%' IDENTIFIED BY 'Cloudera';
 	* mysql> SET GLOBAL binlog_format = 'ROW'; 
 	* mysql> FLUSH TABLES WITH READ LOCK;
+* Run this from slave to get the db and tables -> mysqldump -h 172.31.5.153 -u root -p --databases scm > scm.sql
+* Run this from slavemysqldump -u root -p scm > scm.sql
 * In a second terminal session, log into the MySQL master and show its status:
 	* mysql> SHOW MASTER STATUS;
 	* Make note of the file name and byte offset. The replica needs this info to sync to the master.
