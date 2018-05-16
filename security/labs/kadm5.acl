@@ -1,0 +1,2 @@
+[root@ip-172-31-5-153 ~]# cat /var/kerberos/krb5kdc/kadm5.acl
+*/admin@CLOUDERA        *
